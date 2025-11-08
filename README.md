@@ -11,6 +11,8 @@ The goal is to maintain clarity and ease of customization while delivering a ful
 ## Requirements
 
 * Hyprland
+* gt6ct
+* xdg-desktop-portal-gtk
 * Some other things for the keybinds, find them as you go
 
 ## Installation
