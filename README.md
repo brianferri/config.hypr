@@ -33,26 +33,16 @@ The goal is to maintain clarity and ease of customization while delivering a ful
 
 ## Structure & Loading Order
 
-* `hyprland.conf` is the main entry point, which includes the modular config files inside the `configs/` folder.
-* The `configs/` directory contains split configurations, including:
-
-  * `animations.conf`
-  * `input.conf`
-  * `keybinds.conf`
-  * `monitors.conf`
-  * `theme.conf`
-  * `windowrules.conf`
-
-* The `scripts/` folder contains shell scripts to extend functionality, such as:
-
+* `hyprland.lua` is the main entry point, which `require`s the modular config files inside the `configs/` folder.
+* The `scripts/` folder contains shell scripts to extend functionality:
   * `screenshot.sh`: Take screenshots
   * `toggle_show_desktop.sh`: Toggle applications or workspace visibility
   * `switch_keyboard_layout.sh`: Easily switch keyboard layouts
   * [`lib/grimblast.sh`](https://github.com/hyprwm/contrib/blob/main/grimblast/grimblast): Helper script used by screenshot utilities
 
-
 ## Usage Tips
 
+* `.luarc.json` points the Lua LSP at `/usr/share/hypr/stubs`, which ships the generated API definitions for autocompletion.
 * Keep your `scripts/` folder executable:
 
   ```bash
