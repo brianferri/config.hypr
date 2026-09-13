@@ -1,4 +1,5 @@
 -- https://wiki.hypr.land/configuring/core/binds/
+-- https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h
 local mainMod = "SUPER"
 
 local scripts = os.getenv("HOME") .. "/.config/hypr/scripts"
