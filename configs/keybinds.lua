@@ -40,6 +40,9 @@ hl.bind("SHIFT + ALT + Tab", function()
     hl.dispatch(hl.dsp.window.bring_to_top())
 end)
 
+hl.bind("ALT + SHIFT + bracketleft",  hl.dsp.focus({ workspace = "-1" }))
+hl.bind("ALT + SHIFT + bracketright", hl.dsp.focus({ workspace = "+1" }))
+
 -- https://wiki.hypr.land/configuring/core/binds/devices/mouse/
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
